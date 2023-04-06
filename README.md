@@ -21,10 +21,10 @@ You can use npm to install but for these instructions I will be using yarn. It w
 Once dependencies are installed run the following command: 
 
 ```bash
-  cp .env-example .env;
+  cp .env.example .env;
 ```
 
-You will need to update the newly created .env file with your wallets PRIVATE_KEY and make sure to get API keys from [Etherscan](https://etherscan.io/) and [PolygonScan](https://polygonscan.com/). Create an account to get your API keys, these are free. 
+You will need to update the newly created .env file with your wallet's PRIVATE_KEY. Make sure to get API keys from [Etherscan](https://etherscan.io/) or [PolygonScan](https://polygonscan.com/). Create an account to get your API keys, these are free. 
 
 Run the command below to deploy your contract to the Polygon Mumbai Network. Make sure the wallet you got your private key from has a small amount of test matic for deployment. You can get test matic [here](https://faucet.polygon.technology/).
 
@@ -63,7 +63,7 @@ Deposit the funds you would like to start with and take note of your api key for
 
 Finally we'll need to authorize the contract we just deployed. 
 
-Head back to the dApp page and click Smart Contracts and then Add Smart Contract. You can add the name of your contract and the address here. Because we verified it the ABI will be automatically fethced. If you do not verify your contract you can also manually paste your ABI here as well. Make sure to select the write method that you would like to authorize for gasless transactions. In this case we just have an incrementCount method. 
+Head back to the dApp page and click Smart Contracts and then Add Smart Contract. You can add the name of your contract and the address here. Because we verified it the ABI will be automatically fetched. If you do not verify your contract you can also manually paste your ABI here as well. Make sure to select the write method that you would like to authorize for gasless transactions. In this case we just have an incrementCount method. 
 
 
 ![Register new dApp part 3](https://bafybeihrdt7snhnkhffz4slqgcn2u5e65weeyu22kkbio7dmlizhlmrkvq.ipfs.w3s.link/Screen%20Shot%202023-04-03%20at%2011.44.48%20AM.png)
@@ -79,7 +79,7 @@ In your terminal navigate to the root folder of the project and install dependen
 ```
 
 ```bash
-  cp .env-example .env;
+  cp .env.example .env;
 ```
 
 Add your Biconomy API Key and your contract address in the .env file, and use the dev script to run: 
