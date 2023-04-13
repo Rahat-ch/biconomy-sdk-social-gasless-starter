@@ -9,24 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@biconomy-sdk-dev/core-types": "1.0.21",
-    "@biconomy-sdk-dev/relayer": "1.0.21",
-    "@biconomy-sdk-dev/smart-account": "1.0.21",
-    "@biconomy-sdk-dev/transactions": "1.0.21",
-    "@biconomy-sdk-dev/web3-auth": "1.0.21",
-    "@biconomy/core-types": "^1.0.0",
-    "@biconomy/smart-account": "^1.0.0",
-    "@biconomy/web3-auth": "^1.0.0",
+    "@biconomy/core-types": "^2.0.0",
+    "@biconomy/smart-account": "^2.0.0",
+    "@biconomy/web3-auth": "^2.0.0",
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
-    "add": "^2.0.6",
     "ethers": "5.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-toastify": "^9.1.2",
     "rollup-plugin-polyfill-node": "^0.12.0",
-    "stream-browserify": "^3.0.0",
-    "util": "^0.12.5",
-    "yarn": "^1.22.19"
+    "stream-browserify": "^3.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

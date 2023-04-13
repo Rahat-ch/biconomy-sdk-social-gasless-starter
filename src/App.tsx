@@ -1,10 +1,10 @@
 import './App.css'
 import "@biconomy-sdk-dev/web3-auth/dist/src/style.css"
 import { useState, useEffect, useRef } from 'react'
-import SocialLogin from "@biconomy-sdk-dev/web3-auth"
-import { ChainId } from "@biconomy-sdk-dev/core-types";
+import SocialLogin from "@biconomy/web3-auth"
+import { ChainId } from "@biconomy/core-types";
 import { ethers } from 'ethers'
-import SmartAccount from "@biconomy-sdk-dev/smart-account";
+import SmartAccount from "@biconomy/smart-account";
 import Counter from './Components/Counter';
 
 
@@ -14,7 +14,6 @@ export default function App() {
   const sdkRef = useRef<SocialLogin | null>(null)
   const [loading, setLoading] = useState<boolean>(false)
   const [provider, setProvider] = useState<any>(null);
-  const [acct, setAcct] = useState<any>(null);
 
   useEffect(() => {
     let configureLogin:any
@@ -68,8 +67,7 @@ export default function App() {
           },
         ],
       })
-      const acct = await smartAccount.init()
-      setAcct(acct)
+      await smartAccount.init()
       setSmartAccount(smartAccount)
       setLoading(false)
     } catch (err) {
@@ -102,7 +100,7 @@ export default function App() {
           <div className="buttonWrapper">
             <h3>Smart account address:</h3>
             <p>{smartAccount.address}</p>
-            <Counter smartAccount={smartAccount} provider={provider} acct={acct} />
+            <Counter smartAccount={smartAccount} provider={provider} />
             <button onClick={logout}>Logout</button>
           </div>
         )

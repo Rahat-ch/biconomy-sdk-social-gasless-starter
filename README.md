@@ -42,33 +42,9 @@ This will verify your contract on Polygonscan and give you a link to your code o
 
 ## Biconomy Dashboard Registration
 
-Now head over to the [Biconomy SDK Dashboard](https://dashboard-beta.biconomy.io/)
+Now head over to the [Biconomy SDK Dashboard](https://dashboard.biconomy.io/)
 
-Sign in With Github then register a new dApp. I have some registred dApps already but you might not. 
-
-![Register new dApp](https://bafybeie46e6x5hgmjjirsb5ixapuyi4jscalrtqvjzrmnn6ub64ocism7e.ipfs.w3s.link/Screen%20Shot%202023-04-03%20at%2011.02.14%20AM.png)
-
-Name your dApp and choose a chain, in this case we deployed to Polygon Mumbai so let's choose this one. 
-
-![Register new dApp part 2](https://bafybeieeefki3t3jtybm336nctubdd4gcaxkw5dn4ykt3tkl3urouekrqy.ipfs.w3s.link/Screen%20Shot%202023-04-03%20at%2011.22.31%20AM.png)
-
-
-You'll see this message on the top right let's click set up gas tank to set up the funds needed to cover users gas costs!
-
-![Register new dApp part 2](https://bafybeifgyakcoem37t7f355rpa3pbjwdvwga2pv6bzceznmg5b6oxmdiga.ipfs.w3s.link/Screen%20Shot%202023-04-03%20at%2011.28.13%20AM.png)
-
-From here its fairly simple, agree to the terms and sign with the your wallet. Its important to note that if you want to withdraw the funds at any point then you will need to make sure that you use the same wallet you sign with at this step. 
-
-Deposit the funds you would like to start with and take note of your api key for later. 
-
-Finally we'll need to authorize the contract we just deployed. 
-
-Head back to the dApp page and click Smart Contracts and then Add Smart Contract. You can add the name of your contract and the address here. Because we verified it the ABI will be automatically fetched. If you do not verify your contract you can also manually paste your ABI here as well. Make sure to select the write method that you would like to authorize for gasless transactions. In this case we just have an incrementCount method. 
-
-
-![Register new dApp part 3](https://bafybeihrdt7snhnkhffz4slqgcn2u5e65weeyu22kkbio7dmlizhlmrkvq.ipfs.w3s.link/Screen%20Shot%202023-04-03%20at%2011.44.48%20AM.png)
-
-Copy your API key and you will now be all set!
+Follow the instructionso on the docs [here](https://docs.biconomy.io/guides/biconomy-dashboard) to register your contract, load your gas tank, and grab your api key.
 
 ## Frontend Configuration
 

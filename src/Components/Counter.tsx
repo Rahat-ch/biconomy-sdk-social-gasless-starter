@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SmartAccount from "@biconomy-sdk-dev/smart-account";
+import SmartAccount from "@biconomy/smart-account";
 import abi from "../utils/counterAbi.json";
 import { ethers } from "ethers";
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,12 +8,11 @@ import 'react-toastify/dist/ReactToastify.css';
 interface Props {
   smartAccount: SmartAccount
   provider: any
-  acct: any
 }
 
 // const counterAddress = "0x6305d48dAFfa321604B87eF8Bf8c2231c611F972"
 
-const Counter: React.FC<Props> = ({ smartAccount, provider, acct }) => {
+const Counter: React.FC<Props> = ({ smartAccount, provider }) => {
   const [count, setCount] = useState<number>(0)
   const [counterContract, setCounterContract] = useState<any>(null)
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -65,7 +64,7 @@ const Counter: React.FC<Props> = ({ smartAccount, provider, acct }) => {
         to: counterAddress,
         data: incrementTx.data,
       }
-      const txResponse = await smartAccount.sendGaslessTransaction({ transaction: tx1})
+      const txResponse = await smartAccount.sendTransaction({ transaction: tx1})
 
       const txHash = await txResponse.wait();
       console.log(txHash)
