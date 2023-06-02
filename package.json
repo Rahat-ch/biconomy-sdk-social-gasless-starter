@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@biconomy/core-types": "^2.0.0",
-    "@biconomy/smart-account": "^2.0.0",
+    "@biconomy/core-types": "^2.0.1",
+    "@biconomy/smart-account": "^2.0.1",
     "@biconomy/web3-auth": "^2.0.0",
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "ethers": "5.7.2",
