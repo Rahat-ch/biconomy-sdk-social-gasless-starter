@@ -48,6 +48,9 @@ Follow the instructionso on the docs [here](https://docs.biconomy.io/guides/bico
 
 ## Frontend Configuration
 
+Install Node.js v16.18.1
+> Run `nvm use` with NVM
+
 In your terminal navigate to the root folder of the project and install dependencies and configure the frontend variables as we did for the contract folder. 
 
 ```bash
@@ -58,11 +61,18 @@ In your terminal navigate to the root folder of the project and install dependen
   cp .env.example .env;
 ```
 
-Add your Biconomy API Key and your contract address in the .env file, and use the dev script to run: 
+If you are building for production instead of development, run:
+```bash
+  yarn build
+```
+
+Add your Biconomy API Key and your contract address in the .env file, build, and then use the dev script to run: 
 
 ```bash
   yarn dev
 ```
+
+Go to http://localhost:5000
 
 You should now be all set to try out the starter kit and begin making changes for your own project! 
 
